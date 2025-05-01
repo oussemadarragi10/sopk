@@ -29,7 +29,7 @@ et_xmlfile==2.0.0
 executing==2.2.0
 fastjsonschema==2.21.1
 filelock==3.17.0
-Flask==2.2.3        # Updated Flask version for compatibility with Dash
+Flask==3.0.0
 Flask-Bcrypt==1.0.1
 Flask-Cors==5.0.0
 Flask-JWT-Extended==4.7.1
@@ -154,7 +154,7 @@ tzdata==2025.1
 uritemplate==4.1.1
 urllib3==2.3.0
 wcwidth==0.2.13
-Werkzeug<3.1
+Werkzeug==3.0.0
 wheel==0.45.1
 wrapt==1.17.2
 xgboost==2.1.4
