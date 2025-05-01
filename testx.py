@@ -23,10 +23,11 @@ from flask_cors import CORS
 # ====== APP SETUP ======
 app = Flask(__name__)
 app.config["JWT_SECRET_KEY"] = "your-secret-key-here"  # Change this to a strong secret key
-app.config["MONGO_URI"] = "mongodb://localhost:27017/health_api"
-app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours=1)  # Token expiration time
 
+app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours=1)  # Token expiration time
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 mongo = PyMongo(app)
+
 jwt = JWTManager(app)
 CORS(app)
 
