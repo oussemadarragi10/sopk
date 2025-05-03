@@ -25,7 +25,7 @@ app = Flask(__name__)
 app.config["JWT_SECRET_KEY"] = "your-secret-key-here"  # Change this to a strong secret key
 
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours=1)  # Token expiration time
-app.config["MONGO_URI"] = "mongodb://mongo:LCrIUkdHYJGHOaWeVakXmXzeuTLysgKa@nozomi.proxy.rlwy.net:24828"
+app.config["MONGO_URI"] = "mongodb+srv://oussemadarragi8:<Zgibio123@>@ovairyai.34iohts.mongodb.net/?retryWrites=true&w=majority&appName=ovairyai"
 mongo = PyMongo(app)
 
 jwt = JWTManager(app)
